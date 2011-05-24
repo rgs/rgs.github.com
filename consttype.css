@@ -1,0 +1,5 @@
+BODY { font-family: "didot", sans-serif }
+/* Chartreuse background for titles */
+H2 { height: 36px }
+H1, H2, H3 { background: #7FFF00; border: thin solid black; padding: 5px }
+H4 { margin: 15pt 0 0 0 }
