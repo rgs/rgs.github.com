@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>consttype.org - Mac tips</title>
+<link rel="stylesheet" type="text/css" href="consttype.css" />
+</head>
+<body>
+<h1>Mac / OS X tips</h1>
+<p>Make text selectable in Quick Look:</p>
+<pre><code>defaults delete com.apple.finder QLEnableTextSelection; killall Finder
+</code></pre>
+<p>How to make Safari use a local proxy.pac file on Lion? Put it in
+<code>~/Library/Internet Plug-Ins</code>; elsewhere it won&#8217;t be able to read it.</p>
+<p>Remove the dock autohide delay:</p>
+<pre><code>defaults write com.apple.Dock autohide-delay -float 0 &amp;&amp; killall Dock
+</code></pre>
+<hr />
+<small><a href="/">Back to consttype</a></small>
+</body>
+</html>

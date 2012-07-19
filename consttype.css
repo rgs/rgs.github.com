@@ -7,3 +7,4 @@ H2 { height: 36px }
 /* Chartreuse background for titles */
 H1, H2, H3 { background: #7FFF00; border: thin solid black; padding: 5px }
 H4 { margin: 15pt 0 0 0 }
+PRE { margin-left: 20pt; color: #220077 }
