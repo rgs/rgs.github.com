@@ -11,10 +11,16 @@
 <p>Remove the dock autohide delay:</p>
 <pre><code>defaults write com.apple.Dock autohide-delay -float 0 &amp;&amp; killall Dock
 </code></pre>
+<p>Make icons of hidden apps transparent on the dock:</p>
+<pre><code>defaults write com.apple.Dock showhidden -bool YES &amp;&amp; killall Dock
+</code></pre>
 <p>This link stays handy:
 <i><a href="http://www.macworld.com/article/1161664/hands_on_with_lion_recovery_disk_assistant.html">Hands on with Lion Recovery Disk Assistant</a></i>
 (MacWorld)
 </p>
+<p>Change the default save location from iCloud to On My Mac:</p>
+<pre><code>defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+</code></pre>
 <hr />
 <small><a href="/">Back to consttype</a></small>
 </body>
