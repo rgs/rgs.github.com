@@ -4,8 +4,7 @@ BODY {
     text-align: justify;
 }
 H2 { height: 36px }
-/* Marsala background for titles */
-H1, H2 { background: #955251; color:white; padding: 5px }
-H3 { color: #955251; border-bottom: 1px solid #955251; padding: 5px }
+H1, H2 { background: #445571; color:white; padding: 5px }
+H3 { color: #445571; border-bottom: 1px solid #445571; padding: 5px }
 H4 { margin: 15pt 0 0 0 }
 PRE { margin-left: 20pt; color: #220077 }
