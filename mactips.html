@@ -5,25 +5,12 @@
 </head>
 <body>
 <h1>Mac / OS X tips</h1>
-<p>Make text selectable in Quick Look:</p>
-<pre><code>defaults delete com.apple.finder QLEnableTextSelection; killall Finder
-</code></pre>
-<p>Remove the dock autohide delay:</p>
-<pre><code>defaults write com.apple.Dock autohide-delay -float 0 &amp;&amp; killall Dock
-</code></pre>
 <p>Make icons of hidden apps transparent on the dock:</p>
 <pre><code>defaults write com.apple.Dock showhidden -bool YES &amp;&amp; killall Dock
 </code></pre>
 <p>Change the default save location from <i>iCloud</i> to <i>On My Mac</i>:</p>
 <pre><code>defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 </code></pre>
-<p>Make Mail.app display the plain text version of multiple-encoding emails:</p>
-<pre><code>defaults write com.apple.mail PreferPlainText -bool TRUE
-</code></pre>
-<p>This link stays handy:
-<i><a href="http://www.macworld.com/article/1161664/hands_on_with_lion_recovery_disk_assistant.html">Hands on with Lion Recovery Disk Assistant</a></i>
-(MacWorld). Related, <i><a href="http://arstechnica.com/apple/2013/10/how-to-make-your-own-bootable-os-x-10-9-mavericks-usb-install-drive/">How to make your own bootable OS X 10.9 Mavericks USB install drive</a></i>.
-</p>
 <hr />
 <small><a href="/">Back to consttype</a></small>
 </body>
