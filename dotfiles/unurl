@@ -1,0 +1,4 @@
+#!/usr/bin/env perl -l
+$_=shift;
+s/%([0-9A-F][0-9A-F])/chr hex $1/gie;
+print;

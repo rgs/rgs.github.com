@@ -1,0 +1,2 @@
+#!/bin/sh
+perl -CS -E'print$_?chr 9601+7*$_/(sort{$b<=>$a}@ARGV)[0]:" "for@ARGV;say' $*

@@ -1,0 +1,5 @@
+#!/bin/sh
+pix="$*"
+[ -d "$pix" ] && pix="$pix/*.{jpg,JPG}"
+[ "$pix" ] || pix="*.{jpg,JPG,jpeg}"
+identify -format "%Q %d/%f %wx%h\n" $pix

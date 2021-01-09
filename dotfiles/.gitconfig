@@ -1,0 +1,54 @@
+[core]
+    pager = less
+    sharedRepository = group
+    whitespace=trailing-space,tab-in-indent
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    grep = auto
+[color "grep"]
+    match = green
+    filename = blue
+    linenumber = blue
+[color "branch"]
+    current = normal bold
+    local = normal
+    remote = cyan
+    plain = blue
+
+[user]
+    name = Rafael Garcia-Suarez
+    email = rgs@consttype.org
+[push]
+    default = tracking
+[pull]
+    rebase = true
+[rebase]
+    stat = true
+[alias]
+    co = checkout
+    st = status -sb
+    di = diff
+    id = diff
+    dic = diff --cached
+    wdiff = diff --word-diff
+    ci = commit
+    cia = commit -a
+    ciaa = commit -a --amend
+    logg = log --oneline --decorate --graph
+    logs = log --stat --no-merges
+    bra = branch -a
+    pul = pull
+    grpe = grep
+    purl = pull --rebase
+    lso = ls-files -o
+    distclean = clean -fdx
+    ff = merge --ff-only
+    rems = remote -v show
+    rpo = remote prune origin
+    fa = fetch --all
+    # grepin PAT1 PAT2 returns lines matching PAT2 in files containing PAT1
+    grepin = "!f(){ git grep \"$2\" $(git grep -l \"$1\"); };f"
+    # commit in the future (git ardis num_hours commit arguments...)
+    ardis = "!f(){ perl -e'@ENV{<GIT_{AUTHO,COMMITTE}R_DATE>}=(~~localtime$^T+3600*shift)x2;exec git,commit,@ARGV' -- \"$@\";};f"
