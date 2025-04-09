@@ -6,7 +6,7 @@ BODY {
   font-family: "didot", sans-serif;
   margin: 1em 20%;
   text-align: justify;
-  background-color: light-dark(white, black);
+  background-color: light-dark(white, #202733);
   color: light-dark(black, white);
 }
 H2 { height: 36px }
